@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tribute Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Spicy Rice' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+
+        <style>
+            #main {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+             #header {
+                display: flex;
+                flex-direction: row;
+                height: 100px;
+                justify-content: space-between;
+                margin-left: 10px;
+                margin-right: 10px;
+                align-items: center;
+            }
+
+            #settings {
+                height: 100%;
+            }
+
+            #title {
+                font-size: 450%;
+                font-family: "Spicy Rice";
+                color: salmon;
+            }
+
+            #messages {
+                height: 100%;
+            }
+
+            #img-div {
+                display: flex;
+                flex-direction: column;
+                margin-left: 20%;
+                margin-right: 20%;;
+            }
+            
+            #image {
+                display: block;
+                height: 50%;
+                max-width: 100%;
+                
+            }
+
+            #img-caption {
+                font-size: 300%;
+                font-family: Tahoma, Verdana, sans-serif;                
+            }
+
+            #img-subcaption {
+                font-size: 50%;
+                color: gray;
+            }
+
+            #tribute-info {
+                text-align: justify;
+                font-size: 25%;
+                background-color: whitesmoke
+            }
+
+            #IconsContainer {
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-left: 20%;
+                margin-right: 20%;
+                margin-top: 50px;
+                margin-bottom: 100px;
+            }
+
+            #SecondContainer {
+                margin: 100px;
+                
+            }
+
+            #match {
+                display: block;
+                margin: auto;
+            }
+
+            #SecondContainer {
+                display: flex;
+                flex-direction: column;
+                height: 1000px;
+                margin-left: 20%;
+                margin-right: 20%;
+                background-color: white;
+                border-style: solid;
+                border-color:#fd297b;
+            }
+
+            #message {
+                margin-top: 50px;
+                text-align: center;
+                font-size: 400%
+            }
+
+            #linkContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin-top: 80px;
+                margin-bottom: 80px;
+            }
+            
+            #tribute-link {
+                padding: 20px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+            }
+
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+            }
+
+            .fa-instagram {
+                background: #125688;
+                color: white;
+            }
+
+            .fa-twitter {
+                background: #55ACEE;
+                color: white;
+            }
+
+            #button {
+                text-align: center;
+				font-size: 1.2em;
+				width: 100%;
+				padding: 1em 0 1em 0;
+                text-decoration: none;
+        		border-radius: 8px;
+		        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
+		        background: linear-gradient(to bottom, #fd297b 0%, #ff655b 100%);
+		        padding: 1em 2.35em 1em 2.35em;
+            }
+
+            #storybutton {
+                margin: auto;
+                width: 50%;
+                text-align: center;
+            }
+
+            #storycontainer {
+                margin: 10%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                background-color: whitesmoke;
+            }
+
+            #storytitle {
+                font-size: 250%;
+                text-align: center;
+            }
+
+            #awardcontainer {
+                background-color: rebeccapurple;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            #fashionaward {
+                font-family: "Playfair Display SC";
+                font-size: 250%;
+                color: white;
+                margin-left: 5%;
+                margin-right: 5%;
+                text-align: center;
+            }
+
+            #mega {
+                margin: 20px;
+                width: 500px;
+                height: 500px;
+                object-fit: cover;
+                border-radius: 50%;
+            }      
+            
+            #award {
+                font-size: 150%;
+                color: white;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            #story {
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+                font-size: 150%;
+            }
+
+            #extra {
+                background: linear-gradient(to bottom, #fd297b 0%, #ff655b 100%);
+            }
+        </style>
+    </head>
+
+    <body id = "main">
+        <div id = "header">
+            <img id = "settings" src = "http://www.intelliquo.in/lib/img/icons/settings-icon-gray.svg"/>
+            <h1 id = "title">Angel Locsin</h1>
+            <img id = "messages" src ="https://upload.wikimedia.org/wikipedia/commons/7/72/Message-icon-grey.png"/>
+        </div>
+
+        <hr>
+
+        <div id = "img-div">
+            <img id = "image" src = "https://sa.kapamilya.com/absnews/abscbnnews/media/2020/news/06/30/20200620-angel-locsin.jpg"/>
+            <div id = "img-caption">
+                <div><strong>Angel,</strong> 36</div>
+                <div id = "img-subcaption">Actress at ABS-CBN</div>
+                <p id = "tribute-info">Angel Locsin is a Filipina television and film actress, commercial model, film producer and fashion designer. On GMA Network from 2002, she came to prominence for her television roles as Alwina in the 2004 fantasy-themed television series Mulawin and as the superheroine Darna in the TV adaptation of the Mars Ravelo eponymous comic. Locsin was a contract artist of GMA Network up to early 2007 until she transferred to its rival network, ABS-CBN. She then starred as Lyka in the television series Lobo, which earned her an International Emmy Award nomination for best performance. She later starred in the films In the Name of Love and One More Try, for which she garnered critical acclaim for both performances. The two films earned Locsin the Star Award for Movies for Movie Actress of the Year and the Box-Office Entertainment Award for Film Actress of the Year, winning both awards two consecutive years. In 2013, she won the FAMAS Award and the Film Academy of the Philippines Award for best actress for her performance in One More Try.</p>
+            </div>
+            <img id = "icons" src = "https://boostmatches.com/wp-content/uploads/2020/05/Tinder-Icons-bottom-of-the-screen.png"/>
+        </div>
+
+        <hr>
+
+        <div id = "extra">
+        <div id = "SecondContainer">
+            <img id = "match" src = "https://static.seekingalpha.com/uploads/2018/4/16/47516905-15238534453711956.png"/>
+            <span id = "message">Let's follow her on her social media accounts and ask her something interesting, or you can just say "Hi!".</span>
+            <div id = "linkContainer">
+                <a id = "tribute-link" href = "https://www.facebook.com/AngelLocsin" target = "_blank" class="fa fa-facebook"></a>
+                <a id = "tribute-link" href = "https://www.instagram.com/therealangellocsin/" target = "_blank" class="fa fa-instagram"></a>
+                <a id = "tribute-link" href = "https://twitter.com/143redangel" target ="_blank" class="fa fa-twitter"></a>
+            </div>
+            <div id ="storybutton">
+                <a href="#storycontainer" id="button">Learn more about her!</a>
+            </div>
+        </div>
+        </div>
+
+        <hr>
+
+        <div id = "storycontainer">
+            <div id = "storytitle">
+                <h1>Angel Locsin as Real-Life Darna</h1>
+            </div>
+
+            <div id = "awardcontainer">
+                <div><h3 id = "fashionaward">MEGA Fashion Awards 2021</h3></div>
+                <img id = "mega" src = "https://cf.shopee.ph/file/38e78f28310b4977037c784c57e62aba"/>
+                <div><h4 id = "award">Most Promising Leaders of this Generation</h4></div>
+            </div>
+
+            <div id = "story">
+                <p>While she became famous for her work in the entertainment industry, Angel Locsin has always been noted for her philanthropic work. With the heart to serve others, she used her influence and platform to continuously help and change the lives of Filipinos whenever she can. She was also included in Forbes “Heroes of Philanthropy 2019” in Asia for her charitable works. Not only does she donate financial aid to those affected, Angel Locsin personally goes to help distribute goods to people in need whenever she can. Just recently, she also organized a community pantry in celebration of her birthday, with the goal to provide relief goods to people who are affected by the community quarantine implementations in NCR.</p>
+            </div>
+        </div>
+
+        <footer>
+            <span><strong>Sources:</strong> https://mega.onemega.com/angel-locsin-is-real-super-hero/ & https://en.wikipedia.org/wiki/Angel_Locsin</span>
+        </footer>
+    </body>
+
+</html>
