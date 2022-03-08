@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d80154f2e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="overall-container">
+      <div id="left-container">
+        <div id="left-div-1">
+          <div id="logo">
+            <img
+              id="image"
+              src="assets/logo.png"
+              alt="https://i.pinimg.com/originals/cd/28/16/cd28168e19f7fdf9c666edd083921129.jpg"
+            />
+            <span id="logo-title">The Coffee Shop</span>
+          </div>
+
+          <div class="navbar">
+            <a class="active" href="#left-div-1"
+              ><i class="fa-solid fa-user fa-xl"></i> Personal Info</a
+            >
+            <a href="#left-div-2"
+              ><i class="fa-solid fa-clipboard-list fa-xl"></i> Questions</a
+            >
+            <a href="#left-div-3"
+              ><i class="fa-solid fa-message fa-xl"></i> Comments</a
+            >
+            <a href="#left-div-4"
+              ><i class="fa-solid fa-mug-hot fa-xl"></i> Personality Test</a
+            >
+          </div>
+
+          <div id="intro">
+            <span id="caption">Let's Talk</span>
+            <span id="caption">Over Coffee!</span>
+          </div>
+        </div>
+
+        <div id="left-div-2">
+          <div id="logo">
+            <img
+              id="image"
+              src="assets/logo.png"
+              alt="https://i.pinimg.com/originals/cd/28/16/cd28168e19f7fdf9c666edd083921129.jpg"
+            />
+            <span id="logo-title">The Coffee Shop</span>
+          </div>
+
+          <div class="navbar">
+            <a href="#left-div-1"
+              ><i class="fa-solid fa-user fa-xl"></i> Personal Info</a
+            >
+            <a class="active" href="#left-div-2"
+              ><i class="fa-solid fa-clipboard-list fa-xl"></i> Questions</a
+            >
+            <a href="#left-div-3"
+              ><i class="fa-solid fa-message fa-xl"></i> Comments</a
+            >
+            <a href="#left-div-4"
+              ><i class="fa-solid fa-mug-hot fa-xl"></i> Personality Test</a
+            >
+          </div>
+
+          <img
+            id="types"
+            src="assets/types.jpg"
+            alt="https://www.tasteofhome.com/wp-content/uploads/2020/02/Types-of-Coffee-Drinks_1200X1200.jpg?fit=680,680"
+          />
+        </div>
+
+        <div id="left-div-3">
+          <div id="logo">
+            <img
+              id="image"
+              src="assets/logo.png"
+              alt="https://i.pinimg.com/originals/cd/28/16/cd28168e19f7fdf9c666edd083921129.jpg"
+            />
+            <span id="logo-title">The Coffee Shop</span>
+          </div>
+
+          <div class="navbar">
+            <a href="#left-div-1"
+              ><i class="fa-solid fa-user fa-xl"></i> Personal Info</a
+            >
+            <a href="#left-div-2"
+              ><i class="fa-solid fa-clipboard-list fa-xl"></i> Questions</a
+            >
+            <a class="active" href="#left-div-3"
+              ><i class="fa-solid fa-message fa-xl"></i> Comments</a
+            >
+            <a href="#left-div-4"
+              ><i class="fa-solid fa-mug-hot fa-xl"></i> Personality Test</a
+            >
+          </div>
+
+          <div id="intro">
+            <span id="caption">Thank You</span>
+            <span id="caption">Very Much!!!</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-div">
+        <img
+          id="image2"
+          src="assets/coffee.jpg"
+          alt="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/coffee-beans-in-white-background-carla-m-felderer.jpg"
+        />
+        <h1 id="title">How Do You Like Your Coffee?</h1>
+        <p id="description">Survey Form</p>
+        <p id="disclaimer">
+          All information disclosed on this survey shall only be used for
+          general analytical study.<br />Rest assured that your responses in
+          this survey will be kept confidential.
+        </p>
+        <div id="form-container">
+          <form id="survey-form" method="get">
+            <fieldset id="personal-info">
+              <legend>Personal Info</legend>
+              <label for="name" id="name-label"><strong>Name: </strong></label>
+              <br />
+              <input type="text" id="name" placeholder="First Name" required />
+              <input type="text" id="name" placeholder="Last Name" required />
+              <br />
+              <br />
+              <label for="email" id="email-label"
+                ><strong>Email: </strong></label
+              >
+              <br />
+              <input
+                type="email"
+                id="email"
+                placeholder="email@address.com"
+                required
+              />
+              <br />
+              <br />
+              <label for="number" id="number-label"
+                ><strong>Number: </strong></label
+              >
+              <br />
+              <input
+                type="tel"
+                id="number"
+                pattern="[0]{1}[9]{1}[0-9]{2}-[0-9]{3}-[0-9]{4}"
+                placeholder="09xx-xxx-xxxx"
+                required
+              />
+            </fieldset>
+            <br />
+            <a href="#left-div-2" id="button">Start survey</a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <fieldset id="questions">
+              <legend>Questions</legend>
+              <label for="dropdown"
+                ><strong
+                  >How many days a week do you typically drink at least one cup
+                  of coffee?</strong
+                ></label
+              ><br />
+              <input list="days" id="dropdown" placeholder="Select how many" />
+              <datalist id="days">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+              </datalist>
+              <br />
+              <br />
+              <label
+                ><strong
+                  >What time of the day do you usually drink coffee?</strong
+                ></label
+              ><br />
+              <input type="radio" id="morning" name="time" value="Morning" />
+              <label for="morning">Morning</label><br />
+              <input type="radio" id="noon" name="time" value="Noon" />
+              <label for="noon">Noon</label><br />
+              <input
+                type="radio"
+                id="afternoon"
+                name="time"
+                value="Afternoon"
+              />
+              <label for="afternoon">Afternoon</label><br />
+              <input type="radio" id="evening" name="time" value="Evening" />
+              <label for="evening">Evening</label><br />
+              <input type="radio" id="midnight" name="time" value="Midnight" />
+              <label for="midnight">Midnight</label><br />
+              <br />
+              <label
+                ><strong
+                  >Do you prefer going out for coffee or making it at
+                  home?</strong
+                ></label
+              ><br />
+              <input
+                type="radio"
+                id="goingout"
+                name="prefer"
+                value="Going out"
+              />
+              <label for="goingout">Going out</label><br />
+              <input
+                type="radio"
+                id="home"
+                name="prefer"
+                value="Making at home"
+              />
+              <label for="home">Making at home</label><br />
+              <br />
+              <label
+                ><strong
+                  >What is the most important aspect of your coffee?</strong
+                ></label
+              ><br />
+              <input type="radio" id="price" name="aspect" value="Price" />
+              <label for="price">Price</label><br />
+              <input type="radio" id="taste" name="aspect" value="Taste" />
+              <label for="taste">Taste</label><br />
+              <input
+                type="radio"
+                id="location"
+                name="aspect"
+                value="Shop Location"
+              />
+              <label for="location">Shop Location</label><br />
+              <br />
+              <label
+                ><strong
+                  >Please check all the types of coffee drinks you enjoy
+                  drinking.</strong
+                >
+                <i>(See image at the left for reference)</i></label
+              ><br />
+
+              <div id="column-container">
+                <div class="column">
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="black"
+                    value="Black"
+                  />
+                  <label for="black">Black</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="latte"
+                    value="Latte"
+                  />
+                  <label for="latte">Latte</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="cappuccino"
+                    value="Cappuccino"
+                  />
+                  <label for="cappuccino">Cappuccino</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="americano"
+                    value="Americano"
+                  />
+                  <label for="americano">Americano</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="espresso"
+                    value="Espresso"
+                  />
+                  <label for="espresso">Espresso</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="doppio"
+                    value="Doppio"
+                  />
+                  <label for="doppio">Doppio</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="cortado"
+                    value="Cortado"
+                  />
+                  <label for="cortado">Cortado</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="red-eye"
+                    value="Red Eye"
+                  />
+                  <label for="red-eye">Red Eye</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="galao"
+                    value="Gal&#227;o"
+                  />
+                  <label for="galao">Gal&#227;o</label><br />
+                </div>
+
+                <div class="column">
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="lungo"
+                    value="Lungo"
+                  />
+                  <label for="lungo">Lungo</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="macchiato"
+                    value="Macchiato"
+                  />
+                  <label for="macchiato">Macchiato</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="mocha"
+                    value="Mocha"
+                  />
+                  <label for="mocha">Mocha</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="ristretto"
+                    value="Ristretto"
+                  />
+                  <label for="ristretto">Ristretto</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="flat-white"
+                    value="Flat White"
+                  />
+                  <label for="flat-white">Flat White</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="affogato"
+                    value="Affogato"
+                  />
+                  <label for="affogato">Affogato</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="cafe-au-lait"
+                    value="Caf&#233; Au Lait"
+                  />
+                  <label for="cafe-au-lait">Caf&#233;</label><br />
+                  <input
+                    type="checkbox"
+                    name="drink"
+                    id="irish"
+                    value="Irish"
+                  />
+                  <label for="irish">Irish</label><br />
+                </div>
+              </div>
+            </fieldset>
+            <br />
+            <a href="#left-div-3" id="button">Next</a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <fieldset id="comments">
+              <legend>Additional Comments/Suggestions</legend>
+              <label
+                ><strong
+                  >Please suggest how can we further improve our
+                  shop/service/products for you.</strong
+                ></label
+              ><br />
+              <textarea
+                id="messsage"
+                style="width: 400px; height: 500px"
+              ></textarea>
+              <br />
+            </fieldset>
+            <br />
+            <input type="submit" value="Submit" />
+            <br />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="left-div-4">
+      <div id="logo">
+        <img
+          id="image"
+          src="assets/logo.png"
+          alt="https://i.pinimg.com/originals/cd/28/16/cd28168e19f7fdf9c666edd083921129.jpg"
+        />
+        <span id="logo-title">The Coffee Shop</span>
+      </div>
+      <div class="navbar">
+        <a href="#left-div-1"
+          ><i class="fa-solid fa-user fa-xl"></i> Personal Info</a
+        >
+        <a href="#left-div-2"
+          ><i class="fa-solid fa-clipboard-list fa-xl"></i> Questions</a
+        >
+        <a href="#left-div-3"
+          ><i class="fa-solid fa-message fa-xl"></i> Comments</a
+        >
+        <a class="active" href="#left-div-4"
+          ><i class="fa-solid fa-mug-hot fa-xl"></i> Personality Test</a
+        >
+      </div>
+
+      <div id="personality">
+        <img
+          class="personality"
+          src="assets/personality1.png"
+          alt="https://visual.ly/community/Infographics/humor/what-your-coffee-says-about-you"
+        />
+        <img
+          class="personality"
+          src="assets/personality2.png"
+          alt="https://visual.ly/community/Infographics/humor/what-your-coffee-says-about-you"
+        />
+      </div>
+    </div>
+  </body>
+</html>
