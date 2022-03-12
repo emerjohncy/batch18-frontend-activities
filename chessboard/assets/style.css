@@ -1,0 +1,141 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+  background-color: #52688f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.overall-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #bdc6d9;
+}
+
+.navbar {
+  background-color: #bdc6d9;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 4vw;
+}
+
+#logo {
+  width: 5vw;
+}
+
+#title {
+  color: #7391c8;
+  align-items: center;
+  font-size: 4vw;
+}
+
+.navbar a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 2vw;
+  color: black;
+  text-decoration: none;
+  font-size: 1vw;
+}
+
+.navbar a:hover {
+  background-color: #52688f;
+}
+
+.active {
+  background-color: #52688f;
+  color: #7391c8;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chess-container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  padding: 5vw;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  background: transparent;
+}
+
+.light {
+  background-color: #e3e7f1;
+  width: 10vw;
+  height: 10vw;
+}
+
+.dark {
+  background-color: #7391c8;
+  width: 10vw;
+  height: 10vw;
+}
+
+.chess-piece {
+  font-size: 10vw;
+  line-height: 1.1;
+}
+
+@media only screen and (min-width: 768px) {
+  .overall-container {
+    flex-direction: row;
+  }
+  .header {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    padding-left: 8vh;
+  }
+
+  .chess-container {
+    width: 80vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 20vh;
+  }
+
+  .light {
+    width: 10vh;
+    height: 10vh;
+  }
+
+  .dark {
+    width: 10vh;
+    height: 10vh;
+  }
+
+  .chess-piece {
+    font-size: 10vh;
+  }
+}
