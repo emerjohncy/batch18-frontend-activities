@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d80154f2e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="overall-container">
+        <header id="header">
+            <img id="header-img" src="assets/images/logo.png">
+            <nav id="nav-bar">
+                <a class="nav-link" id="active" href="home.html">HOME</a>
+                <a class="nav-link" href="news.html">NEWS</a>
+                <a class="nav-link" href="characters-mondstadt.html">CHARACTERS</a>
+                <a class="nav-link" href="explore.html">EXPLORE</a>
+            </nav>
+            <div id="form-button">
+                <button id="login" onclick="document.getElementById('form-modal').style.display='block'">
+                    <i id="user-icon" class="fa-regular fa-user"></i>
+                    <span id="button-text">SIGN UP</span>
+                </button>
+            </div>
+        </header>
+
+        <div id="content">
+            <h1 id="title"><span id="description">An Open-World</span><br>Action RPG Game</h1>
+            <p id="description2">In the world of Teyvat - where the seven elements flow and 
+                converge. In the distant past, the Archons granted mortals 
+                unique elemenal abilities.</p>
+            <br>
+            <div id="dl-container">
+                <a class="download-links" href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact" target="_blank">
+                    <img class="download-button" src="assets/images/google-play.png">
+                </a>
+                <a class="download-links" href="https://apps.apple.com/app/id1517783697" target="_blank">
+                    <img class="download-button" src="assets/images/app-store.png">
+                </a>
+                <a class="download-links" href="https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default" target="_blank">
+                    <img class="download-button" src="assets/images/windows.png">
+                </a>
+            </div>
+        </div>
+        <div id="video-link">
+            <a href="video.html">
+                <img id="play-button" src="assets/images/play-button.png">
+            </a>
+        </div>
+
+        <footer>
+            <a class="socmed-buttons" id="facebook" href="https://www.facebook.com/Genshinimpact/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="socmed-buttons" id="twitter" href="https://twitter.com/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="socmed-buttons" id="instagram" href="https://www.instagram.com/genshinimpact/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="socmed-buttons" id="youtube" href="http://www.youtube.com/c/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </footer>
+    </div>
+
+    <div id="form-modal">
+        <div id="form-container">
+            <div id="main-form">
+                <div id="x-container">
+                    <img id="close-button" src="assets/images/close-button-gray.png" onclick="document.getElementById('form-modal').style.display='none'">
+                </div>
+    
+                <div id="form-title">
+                    <h1>Sign Up by Email</h1>
+                </div>
+
+                <form id="form" action="signup.html">
+                    <div class="form-div">
+                        <input type="email" class="form-input" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-div">
+                        <input type="password" class="form-input" id="password" pattern="[0-9a-zA-Z]{8,30}" placeholder="Password must be 8-30 characters (no special characters)" required>
+                    </div>
+
+                    <div id="agreement-div">
+                        <input type="checkbox" id="agreement" required>
+                        <label for="agreement" id="agreement-label">I have read and agree to the <a class="agreement-link" href="https://account.hoyoverse.com/#/about/userAgreement?lang=en-us">Terms of Service</a>
+                        and <a class="agreement-link" href="https://account.hoyoverse.com/#/about/privacy?lang=en-us">Privacy Policy</a>.</label><br>
+                    </div>
+                    <br>
+                    <input type="submit" id="signup-button" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

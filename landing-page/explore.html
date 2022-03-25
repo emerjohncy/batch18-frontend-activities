@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <link rel="stylesheet" href="assets/styles-explore.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d80154f2e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="overall-container">
+        <header id="header">
+            <img id="header-img" src="assets/images/logo.png">
+            <nav id="nav-bar">
+                <a class="nav-link" href="home.html">HOME</a>
+                <a class="nav-link" href="news.html">NEWS</a>
+                <a class="nav-link" href="characters-mondstadt.html">CHARACTERS</a>
+                <a class="nav-link" id="active" href="explore.html">EXPLORE</a>
+            </nav>
+            <div id="form-button">
+                <button id="login" onclick="document.getElementById('form-modal').style.display='block'">
+                    <i id="user-icon" class="fa-regular fa-user"></i>
+                    <span id="button-text">SIGN UP</span>
+                </button>
+            </div>
+        </header>
+
+        <section id="sec-teyvat">
+            <div class="explore-title">
+                <h1 id="teyvat">TEYVAT</h1>
+            </div>
+            <div class="explore-description">
+                <p class="region-description">You have arrived in Teyvat — a fantasy world where the seven elements 
+                flow and converge. In the distant past, the Archons granted mortals unique elemental abilities. 
+                With the help of such powers, people formed a bountiful homeland out of the wilderness. However, 
+                500 years ago, the collapse of an ancient civilization turned the universe upside down...<br>
+                Though the calamity the world suffered has ceased, peace has yet to be restored.</p>
+            </div>
+        </section>
+
+        <section id="sec-mondstadt">
+            <div class="explore-title">
+                <h1>Mondstadt</h1>
+            </div>
+            <div class="explore-description">
+                <p class="region-description">A city of freedom that lies in the northeast of Teyvat.<br>From amongst 
+                mountains and wide-open plains, carefree breezes carry the scent of dandelions — a gift from the Anemo
+                 God, Barbatos — across Cider Lake to Mondstadt, which sits on an island in the middle of the lake.</p>
+            </div>
+        </section>
+
+        <section id="sec-liyue">
+            <div class="explore-title">
+                <h1>Liyue</h1>
+            </div>
+            <div class="explore-description">
+                <p class="region-description">A bountiful harbor that lies in the east of Teyvat.<br>Mountains stand 
+                tall and proud alongside the stone forest, that together with the open plains and lively rivers make 
+                up Liyue's bountiful landscape, which shows its unique beauty through each of the four seasons. Just 
+                how many gifts from the Geo God lie in wait amongst the rocks of Liyue's mountains?</p>
+            </div>
+        </section>
+
+        <section id="sec-inazuma">
+            <div class="explore-title">
+                <h1>Inazuma</h1>
+            </div>
+            <div class="explore-description">
+                <p class="region-description">An Isolated Archipelago Far East of Teyvat.<br>Overcome endless 
+                thunderstorms and set foot on the islands of red maple and cherry blossoms. On winding shores 
+                and towering cliffs, and in forests and mountains full of secrets, witness the Eternity pursued 
+                by Her Excellency, the Almighty Narukami Ogosho.</p>
+            </div>
+        </section>
+
+        <section id="sec-coming-soon">
+            <div class="explore-title">
+                <h1>Coming Soon</h1>
+            </div>
+            <div class="explore-description">
+                <p class="region-description">4 upcoming regions still awaits<br>
+                Stay tuned, Traveler!</p>
+            </div>
+        </section>
+
+        <footer>
+            <a class="socmed-buttons" id="facebook" href="https://www.facebook.com/Genshinimpact/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="socmed-buttons" id="twitter" href="https://twitter.com/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="socmed-buttons" id="instagram" href="https://www.instagram.com/genshinimpact/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="socmed-buttons" id="youtube" href="http://www.youtube.com/c/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </footer>
+    </div>
+
+    <div id="form-modal">
+        <div id="form-container">
+            <div id="main-form">
+                <div id="x-container">
+                    <img id="close-button" src="assets/images/close-button-gray.png" onclick="document.getElementById('form-modal').style.display='none'">
+                </div>
+    
+                <div id="form-title">
+                    <h1>Sign Up by Email</h1>
+                </div>
+
+                <form id="form" action="signup.html">
+                    <div class="form-div">
+                        <input type="email" class="form-input" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-div">
+                        <input type="password" class="form-input" id="password" pattern="[0-9a-zA-Z]{8,30}" placeholder="Password must be 8-30 characters (no special characters)" required>
+                    </div>
+
+                    <div id="agreement-div">
+                        <input type="checkbox" id="agreement" required>
+                        <label for="agreement" id="agreement-label">I have read and agree to the <a class="agreement-link" href="https://account.hoyoverse.com/#/about/userAgreement?lang=en-us">Terms of Service</a>
+                        and <a class="agreement-link" href="https://account.hoyoverse.com/#/about/privacy?lang=en-us">Privacy Policy</a>.</label><br>
+                    </div>
+                    <br>
+                    <input type="submit" id="signup-button" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <a href="#header"><img id="scrolltop-button" src="assets/images/scrolltop-button.png"></a>
+</body>
+</html>

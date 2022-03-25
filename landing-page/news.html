@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <link rel="stylesheet" href="assets/styles-news.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d80154f2e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="overall-container">
+        <header id="header">
+            <img id="header-img" src="assets/images/logo.png">
+            <nav id="nav-bar">
+                <a class="nav-link" href="home.html">HOME</a>
+                <a class="nav-link" id="active" href="news.html">NEWS</a>
+                <a class="nav-link" href="characters-mondstadt.html">CHARACTERS</a>
+                <a class="nav-link" href="explore.html">EXPLORE</a>
+            </nav>
+            <div id="form-button">
+                <button id="login" onclick="document.getElementById('form-modal').style.display='block'">
+                    <i id="user-icon" class="fa-regular fa-user"></i>
+                    <span id="button-text">SIGN UP</span>
+                </button>
+            </div>
+        </header>
+
+        <div id="content">
+            <div class="free-space"></div>
+
+            <a class="news-link" href="https://genshin.hoyoverse.com/en/news/detail/20034" target="_blank">
+                <div class="news-div">
+                    <div class="news-img-div">
+                        <img class="news-img" src="assets/images/news1.jpg">
+                    </div>
+                    <div class="news-title-div">
+                        <h1 class="news-title">Version 2.6 "Zephyr of the Violet Garden" Trailer | Genshin Impact</h1>
+                    </div>
+                    <div class="news-description-div">
+                        <p class="news-description">A vast wind breezes across the fields and encounters the 
+                        illustrious poetry and pictures of the violet garden. The pure light of a deep, 
+                        secluded valley illuminates a corner of the dark abyss. On the surface of the 
+                        reflective water, stories of the past are gradually emerging...</p>
+                    </div>
+                    <div class="news-footer">
+                        <span class="news-date">March 18, 2022</span>
+                        <span class="news-info">Info</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="free-space"></div>
+
+            <a class="news-link" href="https://genshin.hoyoverse.com/en/news/detail/20011" target="_blank">
+                <div class="news-div">
+                    <div class="news-img-div">
+                        <img class="news-img" src="assets/images/news2.png">
+                    </div>
+                    <div class="news-title-div">
+                        <h1 class="news-title">Battle Chronicle: Tool Update</h1>
+                    </div>
+                    <div class="news-description-div">
+                        <p class="news-description">Greetings, Travelers~ This Battle Chronicle update includes an 
+                            updated battle record of the Hyakunin Ikki event and optimized the sharing function. 
+                            There are updates for PC and mobile, so come check them out!</p>
+                    </div>
+                    <div class="news-footer">
+                        <span class="news-date">March 18, 2022</span>
+                        <span class="news-info">Info</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="free-space"></div>
+
+            <a class="news-link" href="https://genshin.hoyoverse.com/en/news/detail/19980" target="_blank">
+                <div class="news-div">
+                    <div class="news-img-div">
+                        <img class="news-img" src="assets/images/news3.jpg">
+                    </div>
+                    <div class="news-title-div">
+                        <h1 class="news-title">"Hyakunin Ikki" Gameplay Details</h1>
+                    </div>
+                    <div class="news-description-div">
+                        <p class="news-description">The "Hyakunin Ikki" event is about to begin! It is said 
+                        that a free-for-all fighting tournament is held in an unknown guild hall in Inazuma, 
+                        and that mortals and monsters alike who enjoy combat can take part in it. This tournament 
+                        is known as Hyakunin Ikki. Form tag teams of two characters and elegantly show off your 
+                        prowess as a warrior. Get ready to turn the heat up!</p>
+                    </div>
+                    <div class="news-footer">
+                        <span class="news-date">March 17, 2022</span>
+                        <span class="news-info">Info</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="free-space"></div>
+        </div>
+
+        <footer>
+            <a class="socmed-buttons" id="facebook" href="https://www.facebook.com/Genshinimpact/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="socmed-buttons" id="twitter" href="https://twitter.com/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="socmed-buttons" id="instagram" href="https://www.instagram.com/genshinimpact/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="socmed-buttons" id="youtube" href="http://www.youtube.com/c/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </footer>
+    </div>
+
+    <div id="form-modal">
+        <div id="form-container">
+            <div id="main-form">
+                <div id="x-container">
+                    <img id="close-button" src="assets/images/close-button-gray.png" onclick="document.getElementById('form-modal').style.display='none'">
+                </div>
+    
+                <div id="form-title">
+                    <h1>Sign Up by Email</h1>
+                </div>
+
+                <form id="form" action="signup.html">
+                    <div class="form-div">
+                        <input type="email" class="form-input" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-div">
+                        <input type="password" class="form-input" id="password" pattern="[0-9a-zA-Z]{8,30}" placeholder="Password must be 8-30 characters (no special characters)" required>
+                    </div>
+
+                    <div id="agreement-div">
+                        <input type="checkbox" id="agreement" required>
+                        <label for="agreement" id="agreement-label">I have read and agree to the <a class="agreement-link" href="https://account.hoyoverse.com/#/about/userAgreement?lang=en-us">Terms of Service</a>
+                        and <a class="agreement-link" href="https://account.hoyoverse.com/#/about/privacy?lang=en-us">Privacy Policy</a>.</label><br>
+                    </div>
+                    <br>
+                    <input type="submit" id="signup-button" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

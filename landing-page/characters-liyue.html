@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <link rel="stylesheet" href="assets/styles-characters.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d80154f2e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="overall-container">
+        <header id="header">
+            <img id="header-img" src="assets/images/logo.png">
+            <nav id="nav-bar">
+                <a class="nav-link" href="home.html">HOME</a>
+                <a class="nav-link" href="news.html">NEWS</a>
+                <a class="nav-link" id="active" href="characters-mondstadt.html">CHARACTERS</a>
+                <a class="nav-link" href="explore.html">EXPLORE</a>
+            </nav>
+            <div id="form-button">
+                <button id="login" onclick="document.getElementById('form-modal').style.display='block'">
+                    <i id="user-icon" class="fa-regular fa-user"></i>
+                    <span id="button-text">SIGN UP</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="content">
+            <div id="sidebar">
+                <a class="region-link" href="characters-mondstadt.html">Mondstadt</a>
+                <a class="region-link" id="active-region" href="characters-liyue.html">Liyue</a>
+                <a class="region-link" href="characters-inazuma.html">Inazuma</a>
+            </div>
+            
+            <div id="div-char">
+                <input type="radio" class="btn-control" id="xiao-thumb" name="thumbnail" checked>
+                <label for="xiao-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/xiao.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/xiao.png">
+                <h1 class="char-name">Xiao</h1>
+                <p class="char-description">
+                    One of the mighty and illuminated adepti guarding Liyue, also heralded as the "Vigilant Yaksha."
+                    Despite his youthful appearance, tales of his exploits have been documented for millennia.
+                    He is especially fond of Wangshu Inn's Almond Tofu. This is because it tastes just like the sweet dreams he used to devour.
+                </p>
+
+                <input type="radio" class="btn-control" id="beidou-thumb" name="thumbnail">
+                <label for="beidou-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/beidou.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/beidou.png">
+                <h1 class="char-name">Beidou</h1>
+                <p class="char-description">
+                    Captain of the Crux, with quite the reputation in Liyue.
+                    There are those who say she can split mountains and part the sea. Others say she draws lightning through her sword. Some say 
+                    that even the mightiest of sea beasts are no match for her.
+                    For those not from Liyue, it may sound like a hearty joke, but those that have sailed with her will say—
+                </p>
+
+                <input type="radio" class="btn-control" id="ningguang-thumb" name="thumbnail">
+                <label for="ningguang-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/ningguang.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/ningguang.png">
+                <h1 class="char-name">Ningguang</h1>
+                <p class="char-description">
+                    Owner of the Jade Chamber in the skies above Liyue, there are stories abound about Ningguang, with her elegance and mysterious smile.
+                    As the Tianquan of the Liyue Qixing, not only does she embody law and order, she also represents fortune and wit.
+                </p>
+
+                <input type="radio" class="btn-control" id="xiangling-thumb" name="thumbnail">
+                <label for="xiangling-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/xiangling.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/xiangling.png">
+                <h1 class="char-name">Xiangling</h1>
+                <p class="char-description">
+                    The Head Chef at the Wanmin Restaurant and also a waitress there, Xiangling is extremely passionate about cooking and excels at her signature hot and spicy dishes.
+                    Though still young, Xiangling is a true master of the culinary arts with all the skills of a kitchen veteran. She enjoys a good reputation among the hearty eaters at Chihu Rock.
+                </p>
+
+                <input type="radio" class="btn-control" id="xingqiu-thumb" name="thumbnail">
+                <label for="xingqiu-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/xingqiu.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/xingqiu.png">
+                <h1 class="char-name">Xingqiu</h1>
+                <p class="char-description">
+                    Second son of the Feiyun Commerce Guild, Xingqiu has had a reputation for being studious and polite ever since he was a young child.
+                    But there is another side to the mild-mannered Xingqiu everyone knows. A daring, adventurous and much more mischievous side...
+                </p>
+
+                <input type="radio" class="btn-control" id="chongyun-thumb" name="thumbnail">
+                <label for="chongyun-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/chongyun.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/chongyun.png">
+                <h1 class="char-name">Chongyun</h1>
+                <p class="char-description">
+                    An exorcist who roams the land with Liyue as his base of operations, evil spirits fleeing wherever he goes. As the heir to a clan of exorcists, he has always possessed abilities 
+                    superior to most. However, these abilities are not the result of training, but of an inborn trait — a pure-yang spirit.
+                </p>
+
+                <input type="radio" class="btn-control" id="qiqi-thumb" name="thumbnail">
+                <label for="qiqi-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/qiqi.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/qiqi.png">
+                <h1 class="char-name">Qiqi</h1>
+                <p class="char-description">
+                    An apprentice and herb gatherer at Bubu Pharmacy.
+                    "Blessed" by the adepti with a body that cannot die, this petite zombie cannot do anything without first giving herself orders to do it.
+                    But on her worst days, she even forgets to look at her notebook...
+                </p>
+
+                <input type="radio" class="btn-control" id="keqing-thumb" name="thumbnail">
+                <label for="keqing-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/keqing.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/keqing.png">
+                <h1 class="char-name">Keqing</h1>
+                <p class="char-description">
+                    The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis' unilateral approach to policymaking in Liyue ⁠— but in truth, gods admire skeptics such as her quite a lot.
+                    She firmly believes that humanity's future should be determined by humans themselves, and that they can even do better than the archons and adepti have done for them. In order to prove this, she works harder than anyone else.
+                </p>
+
+                <input type="radio" class="btn-control" id="tartaglia-thumb" name="thumbnail">
+                <label for="tartaglia-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/tartaglia.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/tartaglia.png">
+                <h1 class="char-name">Tartaglia</h1>
+                <p class="char-description">
+                    Meet Tartaglia — the cunning Snezhnayan whose unpredictable personality keeps people guessing his every move.
+                    Don't be under any illusion as to what he might be thinking or what his intentions are. Just remember this: Behind that innocent, childlike exterior lies a finely honed instrument of war.
+                </p>
+
+                <input type="radio" class="btn-control" id="zhongli-thumb" name="thumbnail">
+                <label for="zhongli-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/zhongli.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/zhongli.png">
+                <h1 class="char-name">Zhongli</h1>
+                <p class="char-description">
+                    Wangsheng Funeral Parlor mysterious consultant. Handsome, elegant, and surpassingly learned.
+                    Though no one knows where Zhongli is from, he is a master of courtesy and rules. From his seat at Wangsheng Funeral Parlor, he performs all manner of rituals.
+                </p>
+
+                <input type="radio" class="btn-control" id="xinyan-thumb" name="thumbnail">
+                <label for="xinyan-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/xinyan.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/xinyan.png">
+                <h1 class="char-name">Xinyan</h1>
+                <p class="char-description">
+                    Rock 'n' roll is an avant-garde art in Liyue Harbor and Xinyan is the pioneer in this field.
+                    She rebels against ossified prejudices, using her music and passionate singing to awaken dazed souls fatigued by worldly matters.
+                    If you get the chance, do not miss out on her next performance!
+                </p>
+
+                <input type="radio" class="btn-control" id="ganyu-thumb" name="thumbnail">
+                <label for="ganyu-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/ganyu.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/ganyu.png">
+                <h1 class="char-name">Ganyu</h1>
+                <p class="char-description">
+                    The secretary to the Liyue Qixing. The blood of both human and illuminated beast flows within her veins.
+                    Graceful and quiet by nature, yet the gentle disposition of qilin sees not even the slightest conflict with even the most arduous of workloads. 
+                    After all, Ganyu firmly believes that all the work she does is in honor of her contract with Rex Lapis, seeking the well-being of all living things within Liyue.
+                </p>
+
+                <input type="radio" class="btn-control" id="hutao-thumb" name="thumbnail">
+                <label for="hutao-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/hutao.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/hutao.png">
+                <h1 class="char-name">Hu Tao</h1>
+                <p class="char-description">
+                    Hu Tao is the 77th Director of the Wangsheng Funeral Parlor, a person vital to managing Liyue's funerary affairs.
+                    She does her utmost to flawlessly carry out a person's last rites and preserve the world's balance of yin and yang.
+                    Aside from this, she is also a talented poet whose many "masterpieces" have passed around Liyue's populace by word of mouth.
+                </p>
+
+                <input type="radio" class="btn-control" id="yanfei-thumb" name="thumbnail">
+                <label for="yanfei-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/yanfei.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/yanfei.png">
+                <h1 class="char-name">Yanfei</h1>
+                <p class="char-description">
+                    A half-illuminated beast and highly-skilled legal adviser.
+                    She combines adherence to the legal codices and reasonable flexibility to find the perfect balance in her work. 
+                    She devotes herself to protecting the fairness of contracts in Liyue with her identity as a legal adviser and her unique experience and methods.
+                </p>
+
+                <input type="radio" class="btn-control" id="shenhe-thumb" name="thumbnail">
+                <label for="shenhe-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/shenhe.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/shenhe.png">
+                <h1 class="char-name">Shenhe</h1>
+                <p class="char-description">
+                    Even though she was born in the human world, she ended up being an adepti disciple. 
+                    She grew up in the mountains far away from Liyue Harbor, her soul bound with red ropes, training both her body and mind.
+                    Despite having the elegant temperament of an adeptus, she seems to be shrouded in mystery.
+                </p>
+
+                <input type="radio" class="btn-control" id="yunjin-thumb" name="thumbnail">
+                <label for="yunjin-thumb"><img class="thumb-pics" src="assets/images/characters/liyue/thumbnail/yunjin.png"></label>
+                <img class="char-content" src="assets/images/characters/liyue/yunjin.png">
+                <h1 class="char-name">Yun Jin</h1>
+                <p class="char-description">
+                    The current director of the Yun-Han Opera Troupe, a renowned Liyue opera singer who is skilled in both playwriting and singing. Her style is one-of-a-kind, exquisite and delicate, much like the person herself.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <a class="socmed-buttons" id="facebook" href="https://www.facebook.com/Genshinimpact/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="socmed-buttons" id="twitter" href="https://twitter.com/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="socmed-buttons" id="instagram" href="https://www.instagram.com/genshinimpact/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="socmed-buttons" id="youtube" href="http://www.youtube.com/c/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </footer>
+    </div>
+
+    <div id="form-modal">
+        <div id="form-container">
+            <div id="main-form">
+                <div id="x-container">
+                    <img id="close-button" src="assets/images/close-button-gray.png" onclick="document.getElementById('form-modal').style.display='none'">
+                </div>
+    
+                <div id="form-title">
+                    <h1>Sign Up by Email</h1>
+                </div>
+
+                <form id="form" action="signup.html">
+                    <div class="form-div">
+                        <input type="email" class="form-input" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-div">
+                        <input type="password" class="form-input" id="password" pattern="[0-9a-zA-Z]{8,30}" placeholder="Password must be 8-30 characters (no special characters)" required>
+                    </div>
+
+                    <div id="agreement-div">
+                        <input type="checkbox" id="agreement" required>
+                        <label for="agreement" id="agreement-label">I have read and agree to the <a class="agreement-link" href="https://account.hoyoverse.com/#/about/userAgreement?lang=en-us">Terms of Service</a>
+                        and <a class="agreement-link" href="https://account.hoyoverse.com/#/about/privacy?lang=en-us">Privacy Policy</a>.</label><br>
+                    </div>
+                    <br>
+                    <input type="submit" id="signup-button" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

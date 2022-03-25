@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <link rel="stylesheet" href="assets/styles-characters.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d80154f2e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="overall-container">
+        <header id="header">
+            <img id="header-img" src="assets/images/logo.png">
+            <nav id="nav-bar">
+                <a class="nav-link" href="home.html">HOME</a>
+                <a class="nav-link" href="news.html">NEWS</a>
+                <a class="nav-link" id="active" href="characters-mondstadt.html">CHARACTERS</a>
+                <a class="nav-link" href="explore.html">EXPLORE</a>
+            </nav>
+            <div id="form-button">
+                <button id="login" onclick="document.getElementById('form-modal').style.display='block'">
+                    <i id="user-icon" class="fa-regular fa-user"></i>
+                    <span id="button-text">SIGN UP</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="content">
+            <div id="sidebar">
+                <a class="region-link" href="characters-mondstadt.html">Mondstadt</a>
+                <a class="region-link" href="characters-liyue.html">Liyue</a>
+                <a class="region-link" id="active-region" href="characters-inazuma.html">Inazuma</a>
+            </div>
+            
+            <div id="div-char">
+                <input type="radio" class="btn-control" id="ayaka-thumb" name="thumbnail" checked>
+                <label for="ayaka-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/ayaka.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/ayaka.png">
+                <h1 class="char-name">Ayaka</h1>
+                <p class="char-description">
+                    Daughter of the Yashiro Commission's Kamisato Clan from Inazuma. Dignified and elegant, wise and determined.
+                    Sincere and pleasant to others. Universally loved by the Inazuma people, she has earned the title of Shirasagi Himegimi.
+                </p>
+
+                <input type="radio" class="btn-control" id="kazuha-thumb" name="thumbnail">
+                <label for="kazuha-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/kazuha.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/kazuha.png">
+                <h1 class="char-name">Kazuha</h1>
+                <p class="char-description">
+                    A wandering samurai from Inazuma with a modest and gentle personality.
+                    Beneath a youthful and carefree demeanor lies a heart that hides a great many burdens from the past. Seemingly easygoing, Kazuha has his own code of conduct.
+                </p>
+
+                <input type="radio" class="btn-control" id="yoimiya-thumb" name="thumbnail">
+                <label for="yoimiya-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/yoimiya.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/yoimiya.png">
+                <h1 class="char-name">Yoimiya</h1>
+                <p class="char-description">
+                    A talented pyrotechnician. The current owner of Naganohara Fireworks known as the "Queen of the Summer Festival."
+                    A girl filled with fiery passion. The uncompromising childish innocence and the obsession with craftsmanship intertwine in her to create a spectacular blaze.
+                </p>
+
+                <input type="radio" class="btn-control" id="sayu-thumb" name="thumbnail">
+                <label for="sayu-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/sayu.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/sayu.png">
+                <h1 class="char-name">Sayu</h1>
+                <p class="char-description">
+                    Sayu, Shuumatsuban's resident ninja, is obsessed with sleeping and growing taller.
+                    She has mastered all kinds of ninjutsu to run away and hide in pursuit of opportunities to laze around and sleep.
+                    Such an extraordinary skillset may have very unexpected uses.
+                </p>
+
+                <input type="radio" class="btn-control" id="raiden-thumb" name="thumbnail">
+                <label for="raiden-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/raiden.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/raiden.png">
+                <h1 class="char-name">Raiden Shogun</h1>
+                <p class="char-description">
+                    The Raiden Shogun is the awesome and terrible power of thunder incarnate, the exalted ruler of the Inazuma Shogunate.
+                    With the might of lightning at her disposal, she commits herself to the solitary pursuit of eternity.
+                </p>
+
+                <input type="radio" class="btn-control" id="sara-thumb" name="thumbnail">
+                <label for="sara-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/sara.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/sara.png">
+                <h1 class="char-name">Sara</h1>
+                <p class="char-description">
+                    Leader of the Tenryou Commission's forces. A charismatic woman who acts as swiftly as a storm wind and always honors her word.
+                    She bears the title of "Devotee of the Divine" and has sworn her allegiance to the Raiden Shogun.
+                    The eternity that the Shogun pursues is the cause that she is willing to fight for.
+                </p>
+
+                <input type="radio" class="btn-control" id="kokomi-thumb" name="thumbnail">
+                <label for="kokomi-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/kokomi.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/kokomi.png">
+                <h1 class="char-name">Kokomi</h1>
+                <p class="char-description">
+                    Kokomi is the Divine Priestess of Watatsumi Island, and also serves as its supreme leader.
+                    She is well-versed in the art of war, is good at strategizing, and has keen insights into military affairs. She is also adept at handling domestic affairs, diplomacy, and other matters.
+                    Still, this unfathomable leader has a mysterious side to her...
+                </p>
+
+                <input type="radio" class="btn-control" id="thoma-thumb" name="thumbnail">
+                <label for="thoma-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/thoma.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/thoma.png">
+                <h1 class="char-name">Thoma</h1>
+                <p class="char-description">
+                    The housekeeper of the Yashiro Commission's Kamisato Clan, and a well-known "fixer" in Inazuma.
+                    Friendly and approachable, Thoma fits in with the crowd easily wherever he is.
+                    At first glance, he seems to be a very easygoing person, but he is in fact very responsible. He has an extraordinarily serious side, be it in his work or his interpersonal communications.
+                </p>
+
+                <input type="radio" class="btn-control" id="itto-thumb" name="thumbnail">
+                <label for="itto-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/itto.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/itto.png">
+                <h1 class="char-name">Itto</h1>
+                <p class="char-description">
+                    Descendant of the oni, of intrepid spirit and noble heart.
+                    Fast as the wind and mighty as thunder.
+                </p>
+
+                <input type="radio" class="btn-control" id="gorou-thumb" name="thumbnail">
+                <label for="gorou-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/gorou.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/gorou.png">
+                <h1 class="char-name">Gorou</h1>
+                <p class="char-description">
+                    The great general of Watatsumi Island's forces. He has gained respect and prestige, but always shows himself to be a humble leader.
+                    He is deeply trusted by his subordinates and is someone with whom you can share your feelings without shame.
+                </p>
+
+                <input type="radio" class="btn-control" id="yae-thumb" name="thumbnail">
+                <label for="yae-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/yae.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/yae.png">
+                <h1 class="char-name">Yae Miko</h1>
+                <p class="char-description">
+                    The head shrine maiden in charge of Grand Narukami Shrine and a descendant of Kitsune lineage, Eternity's servant and friend, and the intimidating editor-in-chief of Yae Publishing House, a publisher of light novels...
+                    The enigmatic Guuji, with many identities, may never be fully understood by mortals for what she truly is in her heart of hearts.
+                </p>
+
+                <input type="radio" class="btn-control" id="ayato-thumb" name="thumbnail">
+                <label for="ayato-thumb"><img class="thumb-pics" src="assets/images/characters/inazuma/thumbnail/ayato.png"></label>
+                <img class="char-content" src="assets/images/characters/inazuma/ayato.png">
+                <h1 class="char-name">Ayato</h1>
+                <p class="char-description">
+                    Current head of the Kamisato Clan and, accordingly, the Yashiro Commissioner. He always has a way of attaining his purpose in a well-thought-out manner. However, few people understand what that "goal" he holds most dear is.
+                </p>
+                
+            </div>
+        </div>
+
+        <footer>
+            <a class="socmed-buttons" id="facebook" href="https://www.facebook.com/Genshinimpact/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="socmed-buttons" id="twitter" href="https://twitter.com/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="socmed-buttons" id="instagram" href="https://www.instagram.com/genshinimpact/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="socmed-buttons" id="youtube" href="http://www.youtube.com/c/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </footer>
+    </div>
+
+    <div id="form-modal">
+        <div id="form-container">
+            <div id="main-form">
+                <div id="x-container">
+                    <img id="close-button" src="assets/images/close-button-gray.png" onclick="document.getElementById('form-modal').style.display='none'">
+                </div>
+    
+                <div id="form-title">
+                    <h1>Sign Up by Email</h1>
+                </div>
+
+                <form id="form" action="signup.html">
+                    <div class="form-div">
+                        <input type="email" class="form-input" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-div">
+                        <input type="password" class="form-input" id="password" pattern="[0-9a-zA-Z]{8,30}" placeholder="Password must be 8-30 characters (no special characters)" required>
+                    </div>
+
+                    <div id="agreement-div">
+                        <input type="checkbox" id="agreement" required>
+                        <label for="agreement" id="agreement-label">I have read and agree to the <a class="agreement-link" href="https://account.hoyoverse.com/#/about/userAgreement?lang=en-us">Terms of Service</a>
+                        and <a class="agreement-link" href="https://account.hoyoverse.com/#/about/privacy?lang=en-us">Privacy Policy</a>.</label><br>
+                    </div>
+                    <br>
+                    <input type="submit" id="signup-button" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

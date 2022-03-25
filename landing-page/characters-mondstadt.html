@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <link rel="stylesheet" href="assets/styles-characters.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d80154f2e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="overall-container">
+        <header id="header">
+            <img id="header-img" src="assets/images/logo.png">
+            <nav id="nav-bar">
+                <a class="nav-link" href="home.html">HOME</a>
+                <a class="nav-link" href="news.html">NEWS</a>
+                <a class="nav-link" id="active" href="characters-mondstadt.html">CHARACTERS</a>
+                <a class="nav-link" href="explore.html">EXPLORE</a>
+            </nav>
+            <div id="form-button">
+                <button id="login" onclick="document.getElementById('form-modal').style.display='block'">
+                    <i id="user-icon" class="fa-regular fa-user"></i>
+                    <span id="button-text">SIGN UP</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="content">
+            <div id="sidebar">
+                <a class="region-link" id="active-region" href="characters-mondstadt.html">Mondstadt</a>
+                <a class="region-link" href="characters-liyue.html">Liyue</a>
+                <a class="region-link" href="characters-inazuma.html">Inazuma</a>
+            </div>
+            
+            <div id="div-char">
+                <input type="radio" class="btn-control" id="jean-thumb" name="thumbnail" checked>
+                <label for="jean-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/jean.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/jean.png">
+                <h1 class="char-name">Jean</h1>
+                <p class="char-description">
+                    As the Acting Grand Master of the Knights, Jean has always been devoted to her duties and maintaining peace in Mondstadt. 
+                    She had taken precautions long before the onset of Stormterror's assault, and she will guard Mondstadt with her life as always.
+                </p>
+
+                <input type="radio" class="btn-control" id="amber-thumb"name="thumbnail">
+                <label for="amber-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/amber.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/amber.png">
+                <h1 class="char-name">Amber</h1>
+                <p class="char-description">
+                    A perky, straightforward girl, who is also the only Outrider of the Knights of Favonius. Her amazing mastery of the glider has 
+                    made her a three-time winner of the Gliding Champion in Mondstadt. As a rising star within the Knights of Favonius, Amber is 
+                    always ready for any challenging tasks.
+                </p>
+                
+                <input type="radio" class="btn-control" id="lisa-thumb"name="thumbnail">
+                <label for="lisa-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/lisa.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/lisa.png">
+                <h1 class="char-name">Lisa</h1>
+                <p class="char-description">
+                    She is an intellectual witch who can never get enough naps. As the Librarian of the Knights of Favonius, Lisa is smart in that 
+                    she always knows exactly what to do with whatever troubles her. As much as she loves her sleep, she still manages to keep 
+                    everything under control in a calm, composed manner.
+                </p>
+
+                <input type="radio" class="btn-control" id="kaeya-thumb"name="thumbnail">
+                <label for="kaeya-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/kaeya.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/kaeya.png">
+                <h1 class="char-name">Kaeya</h1>
+                <p class="char-description">
+                    In the Knights of Favonius, Kaeya is the most trusted aide for the Acting Grand Master Jean. You can always count on him to solve 
+                    any intractable problems. Everyone in Mondstadt loves Kaeya, but no one knows what secrets this witty, charming knight has...
+                </p>
+                
+                <input type="radio" class="btn-control" id="barbara-thumb"name="thumbnail">
+                <label for="barbara-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/barbara.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/barbara.png">
+                <h1 class="char-name">Barbara</h1>
+                <p class="char-description">
+                    The Deaconess of the Church of Favonius and a shining idol adored by all. Although the concept of an idol is rather novel in a 
+                    city of bards, the people of Mondstadt love Barbara nonetheless.
+                </p>
+                
+                <input type="radio" class="btn-control" id="diluc-thumb"name="thumbnail">
+                <label for="diluc-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/diluc.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/diluc.png">
+                <h1 class="char-name">Diluc</h1>
+                <p class="char-description">
+                    As the wealthiest gentleman in Mondstadt, the ever-dapper Diluc always presents himself as the epitome of perfection. 
+                    But behind the courteous visage burns a zealous soul that has sworn to protect Mondstadt at all costs, allowing him to 
+                    mercilessly vanquish all who threaten his city.
+                </p>
+                
+                <input type="radio" class="btn-control" id="razor-thumb"name="thumbnail">
+                <label for="razor-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/razor.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/razor.png">
+                <h1 class="char-name">Razor</h1>
+                <p class="char-description">
+                    Some say he is an orphan raised by wolves. Others say he is a wolf spirit in human form.
+                    He is most at home in the wild, fighting with claw and thunder.
+                    To this day the wolf boy can be found prowling the forest, where he and his wolf pack hunt to survive using nothing more than their animal instincts.
+                </p>
+                
+                <input type="radio" class="btn-control" id="venti-thumb"name="thumbnail">
+                <label for="venti-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/venti.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/venti.png">
+                <h1 class="char-name">Venti</h1>
+                <p class="char-description">
+                    A bard that seems to have arrived on some unknown wind — sometimes sings songs as old as the hills, and other times recites poems fresh and new.
+                    Likes apples and lively places, but is not a fan of cheese or anything sticky.
+                    When using his Anemo power to control the wind, it often appears as feathers, as he's fond of that which appears light and breezy.
+                </p>
+
+                <input type="radio" class="btn-control" id="klee-thumb"name="thumbnail">
+                <label for="klee-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/klee.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/klee.png">
+                <h1 class="char-name">Klee</h1>
+                <p class="char-description">
+                    Knights of Favonius Spark Knight! Forever with a bang and a flash!
+                    —And then disappearing from the stern gaze of Acting Grand Master Jean.
+                    But it'd still be better to not be in solitary in the first place.
+                </p>
+                
+                <input type="radio" class="btn-control" id="bennett-thumb"name="thumbnail">
+                <label for="bennett-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/bennett.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/bennett.png">
+                <h1 class="char-name">Bennett</h1>
+                <p class="char-description">
+                    One of the few young adventurers of the Mondstadt Adventurers' Guild, he is always plagued with inexplicable bad luck.
+                    He is the only active member of his own adventure group, known as "Benny's Adventure Team," after all the other members decided to "take leave" 
+                    following a series of unfortunate incidents. As a result, the team is currently on the verge of being dissolved.
+                </p>
+                
+                <input type="radio" class="btn-control" id="noelle-thumb"name="thumbnail">
+                <label for="noelle-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/noelle.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/noelle.png">
+                <h1 class="char-name">Noelle</h1>
+                <p class="char-description">
+                    Like most of Mondstadt's young people, Noelle always dreamed of being a knight of Favonius when she grew up.
+                    She may not have what it takes to be a knight just yet, but she is learning. Working as a maid at the Knights' headquarters, she is constantly 
+                    taking notes on what constitutes knightly speech, knightly conduct, and knightly customs.
+                </p>
+                
+                <input type="radio" class="btn-control" id="fischl-thumb"name="thumbnail">
+                <label for="fischl-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/fischl.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/fischl.png">
+                <h1 class="char-name">Fischl</h1>
+                <p class="char-description">
+                    A mysterious girl who calls herself "Prinzessin der Verurteilung" and travels with a night raven named Oz.
+                    Currently serves as an investigator in the Adventurers' Guild.
+                    Through her unique abilities, eccentric character, and (while she would never admit it herself) hard work, Fischl has become a rising star among 
+                    the Adventurers' Guild's investigators, earning the recognition of all.
+                </p>
+                
+                <input type="radio" class="btn-control" id="sucrose-thumb"name="thumbnail">
+                <label for="sucrose-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/sucrose.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/sucrose.png">
+                <h1 class="char-name">Sucrose</h1>
+                <p class="char-description">
+                    An alchemist with an insatiable curiosity towards the world and everything in it. Attached to the Knights of Favonius as an assistant to Albedo, her area of focus is "bio-alchemy."
+                    She strives to enrich the world by transforming living things with the power of alchemy.
+                </p>
+                
+                <input type="radio" class="btn-control" id="mona-thumb"name="thumbnail">
+                <label for="mona-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/mona.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/mona.png">
+                <h1 class="char-name">Mona</h1>
+                <p class="char-description">
+                    A mysterious young astrologer who proclaims herself to be "Astrologist Mona Megistus," and who possesses abilities to match the title. Erudite, but prideful.
+                    Though she is often strapped for cash and lives a life of thrift, she is resolved to never use astrology for profit... It is this very resolution that has caused her to constantly fret about money.
+                </p>
+                
+                <input type="radio" class="btn-control" id="diona-thumb"name="thumbnail">
+                <label for="diona-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/diona.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/diona.png">
+                <h1 class="char-name">Diona</h1>
+                <p class="char-description">
+                    The incredibly popular bartender of the Cat's Tail tavern, rising star of Mondstadt's wine industry, and the greatest challenger to its traditional powerhouses.
+                    A feisty feline young lady from Springvale, any drink mixed by Diona's hand tastes delicious beyond belief.
+                    Yet given her extreme distaste for alcohol, is her talent a blessing or a curse?
+                </p>
+                
+                <input type="radio" class="btn-control" id="albedo-thumb"name="thumbnail">
+                <label for="albedo-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/albedo.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/albedo.png">
+                <h1 class="char-name">Albedo</h1>
+                <p class="char-description">
+                    Albedo — an alchemist based in Mondstadt, in the service of the Knights of Favonius.
+                    "Genius," "Kreideprinz," or "Captain of the Investigation Team"... Such titles and honors are of no consequence to him when there is so much more research to conduct.
+                </p>
+                
+                <input type="radio" class="btn-control" id="rosaria-thumb"name="thumbnail">
+                <label for="rosaria-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/rosaria.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/rosaria.png">
+                <h1 class="char-name">Rosaria</h1>
+                <p class="char-description">
+                    Rosaria, a sister in Mondstadt's Church of Favonius.
+                    A sister of the church, though you wouldn't know it if it weren't for her attire. An unusual woman with sharp, piercing words and a cold manner.
+                    Her movements are unpredictable. She often leaves without notifying anyone. She acts with some kind of purpose, but others don't seem to know exactly what she stands for...
+                </p>
+                
+                <input type="radio" class="btn-control" id="eula-thumb"name="thumbnail">
+                <label for="eula-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/eula.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/eula.png">
+                <h1 class="char-name">Eula</h1>
+                <p class="char-description">
+                    A rebellious descendant of the old aristocracy who is always out on the battlefield.
+                    As one born into the old aristocracy, carrying the bloodline of sinners, Eula has needed a unique approach to the world to navigate the towering walls of prejudice peacefully. Of course, this 
+                    did not prevent her from severing ties with her clan."
+                </p>
+                
+                <input type="radio" class="btn-control" id="aloy-thumb"name="thumbnail">
+                <label for="aloy-thumb"><img class="thumb-pics" src="assets/images/characters/mondstadt/thumbnail/aloy.png"></label>
+                <img class="char-content" src="assets/images/characters/mondstadt/aloy.png">
+                <h1 class="char-name">Aloy</h1>
+                <p class="char-description">
+                    An agile hunter from the Nora tribe. With bow in hand, she's always ready to protect the innocent.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <a class="socmed-buttons" id="facebook" href="https://www.facebook.com/Genshinimpact/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="socmed-buttons" id="twitter" href="https://twitter.com/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="socmed-buttons" id="instagram" href="https://www.instagram.com/genshinimpact/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="socmed-buttons" id="youtube" href="http://www.youtube.com/c/GenshinImpact" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </footer>
+    </div>
+
+    <div id="form-modal">
+        <div id="form-container">
+            <div id="main-form">
+                <div id="x-container">
+                    <img id="close-button" src="assets/images/close-button-gray.png" onclick="document.getElementById('form-modal').style.display='none'">
+                </div>
+    
+                <div id="form-title">
+                    <h1>Sign Up by Email</h1>
+                </div>
+
+                <form id="form" action="signup.html">
+                    <div class="form-div">
+                        <input type="email" class="form-input" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-div">
+                        <input type="password" class="form-input" id="password" pattern="[0-9a-zA-Z]{8,30}" placeholder="Password must be 8-30 characters (no special characters)" required>
+                    </div>
+
+                    <div id="agreement-div">
+                        <input type="checkbox" id="agreement" required>
+                        <label for="agreement" id="agreement-label">I have read and agree to the <a class="agreement-link" href="https://account.hoyoverse.com/#/about/userAgreement?lang=en-us">Terms of Service</a>
+                        and <a class="agreement-link" href="https://account.hoyoverse.com/#/about/privacy?lang=en-us">Privacy Policy</a>.</label><br>
+                    </div>
+                    <br>
+                    <input type="submit" id="signup-button" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
