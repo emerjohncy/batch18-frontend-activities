@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+:root {
+    --cell-size: 150px;
+    --mark-height: calc(var(--cell-size) * .9);
+    --clr1: #398273;
+    --clr2: #ec7345;
+    --fontfamily: 'Fredoka One', cursive;
+}
+
+.select-character {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--clr1);
+    color: var(--clr2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-family: var(--fontfamily);
+    font-size: 5vw;
+}
+
+.char-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.character {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px;
+    border: 5px solid var(--clr2);
+}
+
+.character:hover,
+#char-o:hover::after {
+    background-color: var(--clr2);
+}
+
+#char-x:hover::before,
+#char-x:hover::after,
+#char-o:hover::before {
+    background-color: var(--clr1);
+}
+
+#char-x::before,
+#char-x::after {
+    position: absolute;
+    content: '';
+    background-color: var(--clr2);
+    height: 30vw;
+    width: 5vw;
+}
+
+#char-x::before {
+    transform: rotate(45deg);
+}
+
+#char-x::after {
+    transform: rotate(-45deg);
+}
+
+#char-o::before,
+#char-o::after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+}
+#char-o::before {
+    background-color: var(--clr2);
+    height: 27vw;
+    width: 27vw;
+}
+
+#char-o::after {
+    background-color: var(--clr1);
+    height: 19vw;
+    width: 19vw;
+}
+
+.game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-content: center;
+    /* justify-items: center;
+    align-items: center; */
+    background-color: white;
+    /* border-radius: 3%; */
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.9);
+}
+
+.tile {
+    position: relative;
+    height: var(--cell-size);
+    width: var(--cell-size);
+    cursor: pointer;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile:first-child,
+.tile:nth-child(2),
+.tile:nth-child(3) {
+    border-top: none;
+}
+
+.tile:nth-child(3n+1) {
+border-left: none;
+}
+
+.tile:nth-child(3n+3) {
+    border-right: none;
+}
+
+.tile:last-child,
+.tile:nth-child(8),
+.tile:nth-child(7) {
+    border-bottom: none;
+}
+
+.tile.x,
+.tile.o {
+    cursor: not-allowed;
+}
+
+.tile.x::before,
+.tile.x::after,
+.board.x .tile:not(.x):not(.o):hover::before,
+.board.x .tile:not(.x):not(.o):hover::after {
+    position: absolute;
+    content: '';
+    background-color: var(--clr1);
+    height: var(--mark-height);
+    width: calc(var(--mark-height) * 0.15);
+}
+
+.tile.x::before,
+.board.x .tile:not(.x):not(.o):hover::before {
+    transform: rotate(45deg);
+}
+
+.tile.x::after,
+.board.x .tile:not(.x):not(.o):hover::after {
+    transform: rotate(-45deg);
+}
+
+.tile.o::before,
+.tile.o::after,
+.board.o .tile:not(.x):not(.o):hover::before,
+.board.o .tile:not(.x):not(.o):hover::after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+}
+
+.tile.o::before,
+.board.o .tile:not(.x):not(.o):hover::before {
+    height: calc(var(--mark-height) * .9);
+    width: calc(var(--mark-height) * .9);
+    background-color: var(--clr2);
+}
+
+.tile.o::after,
+.board.o .tile:not(.x):not(.o):hover::after {
+    height: calc(var(--mark-height) * .6);
+    width: calc(var(--mark-height) * .6);;
+    background-color: white;
+}
+
+.board.x .tile:not(.x):not(.o):hover::before,
+.board.x .tile:not(.x):not(.o):hover::after,
+.board.o .tile:not(.x):not(.o):hover::before {
+    background-color: lightgray;
+}
+
+.tile.winner:not(.o) {
+    background-color: var(--clr2);
+}
+
+.tile.winner:not(.x),
+.tile.winner.o::after {
+    background-color: var(--clr1);
+}
+
+
+.history-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    visibility: hidden;
+}
+
+.button {
+    padding: 1vw 1.5vw;
+    font-family: var(--fontfamily);
+    font-size: 1.5vw;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.9);
+}
