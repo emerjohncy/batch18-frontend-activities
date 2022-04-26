@@ -143,6 +143,7 @@ function checkWin() {
         return;
     }
 
+    //The Other Diagonal Win
     if (board[0][2] === board[1][1] && board[1][1] === board[2][0] && board[0][2] != '') {
         for (let i = 0; i < 3; i++) {
             let tileWinner = document.getElementById("0-2");
@@ -158,8 +159,16 @@ function checkWin() {
         maintainBg();
         gameIsOver();
         return;
-    }    
+    }
+    
+    //If Draw
+    if (historyBoard.length === 9) {
+        gameOver = true;
+        gameIsOver();
+        return;
+    }
 }
+    
 
 // Stop BG color from changing on last click before game is over
 function maintainBg() {
@@ -207,6 +216,7 @@ previousBtn.addEventListener("click", () => {
 let nextBtn = document. querySelector("#next");
 nextBtn.addEventListener("click", () => {
     
+    //Manipulation on JS
     lastItemDeleted = deleteBoard.pop();
     historyBoard.push(lastItemDeleted);
     showBoard = historyBoard[historyBoard.length - 1];
