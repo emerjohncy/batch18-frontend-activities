@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <script src="https://kit.fontawesome.com/d80154f2e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="landing-page">
+        <div class="div-content">
+            <div class="nav-bar">
+                <div class="nav-link active" id="nav-login">Login</div>
+                <div class="nav-link" id="nav-signup">Sign Up</div>
+                <div class="nav-link" id="nav-users">Users</div>
+            </div>
+
+            <div class="content active-content" id="content-login">
+                <div class="div-logo">
+                    <img class="logo" src="assets/logo-whole.png">
+                </div>
+
+                <form class="form" id="login" method="get">
+                    <div class="div-input">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" class="input" id="login-info" placeholder="Email or Username" autocomplete="off" required>
+                    </div>
+
+                    <div class="div-input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" class="input" id="login-password" placeholder="Password" autocomplete="off" required>
+                        <i class="fa-solid fa-eye-slash" id="toggle-password"></i>
+                    </div>  
+                    
+                    <div class="error" id="error-login">
+                        <!-- Display error message here -->
+                    </div>
+
+                    <input type="submit" class="button" id="button-login" value="LOGIN">
+                </form>
+            </div>
+
+            <div class="content" id="content-signup">
+                <div class="div-logo">
+                    <img class="logo" src="assets/logo-whole.png">
+                </div>
+
+                <form class="form" id="signup" method="get">
+                    <div class="div-signup">
+                        <input type="text" class="input-signup" id="username" placeholder="Username" autocomplete="off" required>
+                        <input type="email" class="input-signup" id="email" placeholder="Email" autocomplete="off" required>
+                    </div>
+                    
+                    <div class="div-signup">
+                        <input type="text" class="input-signup" id="firstname" placeholder="First Name" autocomplete="off" required>
+                        <input type="text" class="input-signup" id="lastname" placeholder="Last Name" autocomplete="off" required>
+                    </div>
+                    <div class="div-signup">
+                        <input type="tel" class="input-signup" id="accountnumber" placeholder="Account Number" autocomplete="off" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+                        <input type="number" class="input-signup" id="balance" placeholder="Initial Account Balance" autocomplete="off" min="0" step="1" required>
+                    </div>
+                    <input type="text" class="input-signup" id="password" placeholder="Password" autocomplete="off" required>
+                    <div class="error" id="error-signup">
+                        <!-- Display error message here -->
+                    </div>
+                    <input type="submit" class="button" id="button-signup" value="SUBMIT">
+                </form>
+            </div>
+
+            <div class="content" id="content-users">
+                <button id="load-user-data">Load User Data</button>
+                
+                <div class="div-header">
+                    <div class="header">Username</div>
+                    <div class="header">Email</div>
+                    <div class="header">First Name</div>
+                    <div class="header">Last Name</div>
+                    <div class="header">Account Number</div>
+                    <div class="header">Balance</div>
+                    <div class="header">Password</div>
+                </div>
+                <div class="div-data">
+                    <!-- Display every user here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="banking-page">
+        <div class="top-bar">
+            <img id="header-logo" src="assets/logo-whole.png">
+            <button id="signout-button">SIGN OUT</button>
+        </div>
+
+        <div class="content-banking">
+            <div id="div-card">
+                <div id="card">
+                    <i class="fa-solid fa-peso-sign" id="div-balance"></i>
+                    <div id="card-details">
+                        <div id="div-accountnumber"></div>
+                        <div id="div-name"></div>
+                    </div>
+                </div>
+
+                <div id="transactions">
+                    <div id="deposit">
+                        <i class="fa-solid fa-money-bill transaction-icons"></i>
+                        Deposit
+                    </div>
+                    <div id="withdraw">
+                        <i class="fa-solid fa-money-bills transaction-icons"></i>
+                        Withdraw
+                    </div>
+                    <div id="send-money">
+                        <i class="fa-solid fa-money-bill-transfer transaction-icons"></i>
+                        Send Money
+                    </div>
+                </div>
+            </div>
+
+            <div id="second-row">
+                <div id="div-expenses">
+                    <span id="expenses-title">EXPENSES</span>
+                    <div id="div-expense-form">
+                        <form id="form-expenses">
+                            <input class="input-expenses-items" id="input-expenses-name" type="text" autocomplete="off" placeholder="Enter Expense Name" required>
+                            <input class="input-expenses-items" id="input-expenses-cost" type="number" min="0" step="1" autocomplete="off" placeholder="Enter Cost" required>
+                            <input id="input-expenses-submit" type="submit" value="Add">
+                        </form>
+                    </div>
+                    <div id="expenses-column-title">
+                        <div class="expenses-column">Expense Name</div>
+                        <div class="expenses-column">Cost</div>
+                        <div class="expenses-column">Actions</div>
+                    </div>
+                    
+                    <div id="div-expenses-row">
+                        <!-- <div class="expenses-row">
+                            <div class="expenses-items" id="expense-name">dsadasd</div>
+                            <div class="expenses-items" id="expense-cost">dasdsa</div>
+                            <div class="expenses-items" id="expense-action">
+                                <i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <button id="add-expense">Add Expense</button>
+                </div>
+
+                <div id="div-transaction-history">
+                    <span id="transaction-title">TRANSACTION HISTORY</span>
+                    <div id="transaction-column-title">
+                        <div class="transaction-column">Type</div>
+                        <div class="transaction-column">Amount</div>
+                        <div class="transaction-column">Account Number</div>
+                    </div>
+
+                    <div id="div-transactions-items">
+                        <!-- <div class="transactions-row">
+                            <div class="transactions-items" id="transaction-type">Withdraw</div>
+                            <div class="transactions-items" id="transaction-amount">Php 20200321</div>
+                            <div class="transactions-items" id="transaction-accountnum">2133-3213-2222</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id   ="money-transaction">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-title" id="transaction-title">
+                    <!-- If Withdraw/Deposit -->
+                </div>
+                <div id="div-current-bal">
+                    <!--Current balance here -->
+                </div>
+                <form class="modal-description" id="transaction-form">
+                    <i class="fa-solid fa-money-check" id="modal-card">
+                        <input type="tel" id="accountnumber-transacted" placeholder="xxxx-xxxx-xxxx" autocomplete="off" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}">
+                    </i>
+                    <i class="fa-solid fa-peso-sign" id="modal-pesosign">
+                        <input type="number" id="money-transacted" placeholder="Enter amount" autocomplete="off" min="0" step="1" required>
+                    </i>
+                    <div class="error" id="error-transaction">
+                        <!-- Enter error message -->
+                    </div>
+                    <button type="submit" class="button" id="transaction-submit"></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="app.js"></script>
+</html>
