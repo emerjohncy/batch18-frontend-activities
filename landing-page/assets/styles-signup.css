@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(/landing-page/assets/images/bg4.png);
+    background-image: url(images/bg4.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -168,7 +168,7 @@ footer {
 
 @media all and (orientation: portrait) {
     body {
-        background: url(/landing-page/assets/images/bg-portrait.png);
+        background: url(images/bg-portrait.png);
         background-repeat: repeat-y;
         background-size: cover;
         overflow-x: hidden;

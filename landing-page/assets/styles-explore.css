@@ -91,7 +91,7 @@ button {
 }
 
 #sec-teyvat {
-    background-image: url(/landing-page/assets/images/teyvat1.png);
+    background-image: url(images/teyvat1.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -124,7 +124,7 @@ button {
 }
 
 #sec-mondstadt {
-    background-image: url(/lnding-page/assets/images/mondstadt1.png);
+    background-image: url(images/mondstadt1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,36 +140,36 @@ button {
 @keyframes change1{
     0%
     {
-        background-image: url(/landing-page/assets/images/mondstadt1.png);
+        background-image: url(images/mondstadt1.png);
     }
     16.66%
     {
-        background-image: url(/landing-page/assets/images/mondstadt2.png);
+        background-image: url(images/mondstadt2.png);
     }
     33.33%
     {
-        background-image: url(/landing-page/assets/images/mondstadt3.png);
+        background-image: url(images/mondstadt3.png);
     }
     50%
     {
-        background-image: url(/landing-page/assets/images/mondstadt4.png);
+        background-image: url(images/mondstadt4.png);
     }
     66.67%
     {
-        background-image: url(/landing-page/assets/images/mondstadt5.png);
+        background-image: url(images/mondstadt5.png);
     }
     83.33%
     {
-        background-image: url(/landing-page/assets/images/mondstadt6.png);
+        background-image: url(images/mondstadt6.png);
     }
     100%
     {
-        background-image: url(/landing-page/assets/images/mondstadt1.png);
+        background-image: url(images/mondstadt1.png);
     }
 }
 
 #sec-liyue {
-    background-image: url(/landing-page/assets/images/liyue1.png);
+    background-image: url(images/liyue1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,36 +185,36 @@ button {
 @keyframes change2{
     0%
     {
-        background-image: url(/landing-page/assets/images/liyue1.png);
+        background-image: url(images/liyue1.png);
     }
     16.66%
     {
-        background-image: url(/landing-page/assets/images/liyue2.png);
+        background-image: url(images/liyue2.png);
     }
     33.33%
     {
-        background-image: url(/landing-page/assets/images/liyue3.png);
+        background-image: url(images/liyue3.png);
     }
     50%
     {
-        background-image: url(/landing-page/assets/images/liyue4.png);
+        background-image: url(images/liyue4.png);
     }
     66.67%
     {
-        background-image: url(/landing-page/assets/images/liyue5.png);
+        background-image: url(images/liyue5.png);
     }
     83.33%
     {
-        background-image: url(/landing-page/assets/images/liyue6.png);
+        background-image: url(images/liyue6.png);
     }
     100%
     {
-        background-image: url(/landing-page/assets/images/liyue1.png);
+        background-image: url(images/liyue1.png);
     }
 }
 
 #sec-inazuma {
-    background-image: url(/landing-page/assets/images/liyue1.png);
+    background-image: url(images/liyue1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -230,51 +230,51 @@ button {
 @keyframes change3{
     0%
     {
-        background-image: url(/landing-page/assets/images/inazuma1.png);
+        background-image: url(images/inazuma1.png);
     }
     9.09%
     {
-        background-image: url(/landing-page/assets/images/inazuma2.png);
+        background-image: url(images/inazuma2.png);
     }
     18.18%
     {
-        background-image: url(/landing-page/assets/images/inazuma3.png);
+        background-image: url(images/inazuma3.png);
     }
     27.27%
     {
-        background-image: url(/landing-page/assets/images/inazuma4.png);
+        background-image: url(images/inazuma4.png);
     }
     36.36%
     {
-        background-image: url(/landing-page/assets/images/inazuma5.png);
+        background-image: url(images/inazuma5.png);
     }
     45.45%
     {
-        background-image: url(/landing-page/assets/images/inazuma6.png);
+        background-image: url(images/inazuma6.png);
     }
     54.54%
     {
-        background-image: url(/landing-page/assets/images/inazuma7.png);
+        background-image: url(images/inazuma7.png);
     }
     63.63%
     {
-        background-image: url(/landing-page/assets/images/inazuma8.png);
+        background-image: url(images/inazuma8.png);
     }
     72.72%
     {
-        background-image: url(/landing-page/assets/images/inazuma9.png);
+        background-image: url(images/inazuma9.png);
     }
     81.81%
     {
-        background-image: url(/landing-page/assets/images/inazuma10.png);
+        background-image: url(images/inazuma10.png);
     }
     90.9%
     {
-        background-image: url(/landing-page/assets/images/inazuma11.png);
+        background-image: url(images/inazuma11.png);
     }
     100%
     {
-        background-image: url(/landing-page/assets/images/inazuma1.png);
+        background-image: url(images/inazuma1.png);
     }
 }
 

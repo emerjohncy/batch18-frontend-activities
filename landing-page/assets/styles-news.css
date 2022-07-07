@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     box-sizing: border-box;
-    background-image: url(/landing-page/assets/images/bg5.png);
+    background-image: url(images/bg5.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -110,7 +110,7 @@ button {
     display: grid;
     grid-template-rows: 30vh 13.9vh 25vh 3vh;
     width: 25vw;
-    background-image: url(/landing-page/assets/images/bg-black50.png);
+    background-image: url(images/bg-black50.png);
     padding: 1vw;
 }
 
@@ -293,7 +293,7 @@ footer {
 
 @media all and (orientation: portrait) {
     body {
-        background: url(/landing-page/assets/images/bg-portrait.png);
+        background: url(images/bg-portrait.png);
         background-repeat: repeat-y;
         background-size: cover;
         overflow-x: hidden
